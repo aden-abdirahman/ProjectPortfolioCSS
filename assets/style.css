@@ -1,1 +1,217 @@
+* {
+  /* box-sizing: border-box; */
+  padding: 0;
+  margin: 0;
+}
+/* changing the background color of the body */
+body {
+  background-color: #edf1e9;
+}
+/* setting the padding and font-family. Additionally changing the background color and text color. */
+header {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #297ba1;
+  color: #ffffff;
+}
+/* setting display property and changing the font-size of h1 */
+h1 {
+  display: inline-block;
+  font-size: 48px;
+}
 
+/* changing properties of the nav, adding padding and margin, and changing font-family and font size */
+nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+/* changing the list style of the ul */
+ul {
+  list-style-type: none;
+}
+/* displaying the li as inline-block and adding margin-left */
+li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+a:hover {
+  color: #060f0f;
+}
+
+.hero-image {
+  background-image: url(/assets/images/Hero.jpg); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 200px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+/* setting text color for h2 tag in the hero img */
+.hero-image h2 {
+  color: #ffff;
+  padding: 0 10px 10px 0;
+}
+
+#about {
+  margin: 100 0;
+}
+/* setting properties for h2 element in about section */
+#about h2 {
+  text-decoration: underline;
+  text-align: center;
+  padding: 10px;
+}
+/* setting properties for profile pic so it goes with the flow of the page */
+.profile-pic {
+  display: block;
+  height: 10%;
+  width: 10%;
+  border-radius: 100%;
+  margin: auto;
+  padding: 5px;
+}
+
+.intro {
+  margin: 10px;
+}
+/* setting a visual border between sections */
+hr {
+  border: dotted #297ba1 6px;
+  border-bottom: none;
+  width: 25%;
+  margin: 100px auto;
+}
+/* setting properties for h2 elem inside the work section */
+#work h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px;
+  font-size: 30px;
+}
+/* putting a line between the title of the section and the work */
+.vl {
+  border-left: 6px solid #297ba1;
+  height: 1000px;
+}
+/* setting display properties for the work section */
+#work {
+  display: flex;
+  justify-content: center;
+}
+/* setting properties for the visualized grid */
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  margin: 10px;
+}
+/* choosing how many columns and rows this img takes up */
+.surf {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+/* choosing how many columns and rows this img takes up */
+.led {
+  grid-column: 1/2;
+}
+/* choosing how many columns and rows this img takes up */
+.calc {
+  grid-column: 2/4;
+}
+/* choosing how many columns and rows this img takes up */
+.puzzle {
+  grid-column: 1/2;
+}
+/* choosing how many columns and rows this img takes up */
+.run {
+  grid-column: 2/4;
+}
+/* setting properties for the imgs inside the container */
+.container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border: solid #297ba1 5px;
+  opacity: 0.85;
+  filter: grayscale(30%);
+}
+/* choosing a hover effect for the imgs */
+img:hover {
+  opacity: 100;
+  filter: grayscale(0);
+}
+/* setting properties for the figure tags */
+figure {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+/* setting properties for the titles of the imgs */
+.text-bottom-left {
+  z-index: 100;
+  position: absolute;
+  background-color: #297ba1;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 10px;
+}
+/* setting background color for anchor tags in the section */
+section a {
+  color: #297ba1;
+}
+
+#contact {
+  text-align: center;
+}
+/* setting properties for the h2 tag inside the contact section */
+#contact h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px;
+  font-size: 30px;
+}
+
+.email {
+  margin: 10px;
+}
+/* setting properties for the container in the  footer */
+.bottom-container {
+  background-color: #297ba1;
+  padding: 50px 0 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+/* setting properties for anchor tags in container */
+.bottom-container a {
+  color: black;
+  margin: 10px;
+}
+/* setting hover effects for the anchor tags in the container */
+.bottom-container a:hover {
+  color: white;
+}
+/* setting properties for the contact message */
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
+  text-align: center;
+}
+/* setting properties for the copyright */
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  margin: 20px 0;
+}
